@@ -15,10 +15,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 
 import java.io.IOException;
@@ -38,6 +35,7 @@ public class MinimarketPostGetDeleteTest {
 
     @Order(1)
     @Test
+    @Disabled
     void checkCreateProduct() throws IOException {
 
 
@@ -83,6 +81,7 @@ public class MinimarketPostGetDeleteTest {
 
     @Order(2)
     @Test
+    @Disabled
     void deleteItemFromDB(){
 
         RestAssured.given()
